@@ -19,14 +19,14 @@ public class BlogPost {
 
     private Long Id;
 
-    private String tile;
+    private String title;
     private String author;
     private String blogEntry;
 
 
 
-    public BlogPost(String tile, String author, String blogEntry) {
-        this.tile = tile;
+    public BlogPost(String title, String author, String blogEntry) {
+        this.title = title;
         this.author = author;
         this.blogEntry = blogEntry;
     }
@@ -37,12 +37,12 @@ public class BlogPost {
 
     }
 
-    public String getTile() {
-        return tile;
+    public String getTitle() {
+        return title;
     }
 
-    public void setTile(String tile) {
-        this.tile = tile;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getAuthor() {
@@ -66,7 +66,7 @@ public class BlogPost {
     public String toString() {
         return "BlogPost{" +
                 "Id=" + Id +
-                ", tile='" + tile + '\'' +
+                ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 ", blogEntry='" + blogEntry + '\'' +
                 '}';
