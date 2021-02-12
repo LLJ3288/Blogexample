@@ -4,9 +4,9 @@ import com.tts.techtalentblog.model.BlogPost;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-// Long is a type
-// its a wrapper class that represents your id
-// anything in the diamond is known as a generic or type
+
 @Repository
+//we're passing the generic data types in to instruct CrudRepository how to setup our database
 public interface BlogPostRepository extends CrudRepository<BlogPost, Long> {
+
 }
